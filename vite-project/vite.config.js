@@ -1,11 +1,10 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  plugins: [react()],
+  // your existing config
   preview: {
-    host: true,      // Listen on all network interfaces
-    port: 4173,     // Default preview port
-    allowedHosts: 'all'  // Allow requests from any host
+    host: true,
+    port: 4173,
+    allowedHosts: ['test-6d9n.onrender.com']
   }
 })
